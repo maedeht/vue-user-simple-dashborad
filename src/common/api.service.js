@@ -13,7 +13,7 @@ const ApiService = {
   setHeader() {
     Vue.axios.defaults.headers.common[
       "Authorization"
-    ] = `Token ${JwtService.getToken()}`;
+    ] = `Bearer ${JwtService.getToken()}`;
   },
 
   query(resource, params) {
@@ -102,5 +102,11 @@ export const FavoriteService = {
   },
   remove(slug) {
     return ApiService.delete(`articles/${slug}/favorite`);
+  }
+};
+
+export const InvoiceService = {
+  get() {
+    return ApiService.get("invoices");
   }
 };

@@ -54,12 +54,18 @@ export default new Router({
           component: () => import("@/views/ProfileArticles")
         },
         {
+          path: "invoices",
+          name: "invoices",
+          component: () => import("@/views/ProfileInvoices")
+        },
+        {
           name: "profile-favorites",
           path: "favorites",
           component: () => import("@/views/ProfileFavorited")
         }
       ]
     },
+
     {
       name: "article",
       path: "/articles/:slug",
