@@ -1,4 +1,3 @@
-[![RealWorld Frontend](https://img.shields.io/badge
 > ## Modifying [Vue.js codebase](https://github.com/gothinkster/vue-realworld-example-app) To see user credit and invoices in their dashboard.
 
 ``` bash
